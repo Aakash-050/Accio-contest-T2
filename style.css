@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container{
+    display: flex;
+    margin: 30px 30px;
+    gap: 20px;
+}
+
+.main-container > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.search label{
+    visibility: hidden;
+}
+
+#searchBox{
+    width: 80%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+input{
+    border-radius: 4px;
+    padding: 5px;
+}
+
+select{
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.addOnBox{
+    border-radius: 4px;
+    padding-left: 5px;
+    display: flex;
+    border: 1px solid black;
+}
+
+#text-area{
+    resize: vertical;
+}
+.addOnBox div{
+    width: 70%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#add-ons{
+    border: none;
+}
+
+.addOnButton{
+    width: 30%;
+    border: none;
+    padding: 5px;
+    background-color: white;
+    border-left: 1px solid black;
+    border-radius: 4px;
+}
+
+.checkbox,.radio{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.inc-button{
+    border: 2px solid black;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.inc-button button{
+    border: none;
+    padding: 5px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+  
